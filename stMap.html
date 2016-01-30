@@ -7,19 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href=" Kcnil14.github.io/stylesheets/style1.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="http://maps.googleapis.com/maps/api/js"></script>
   <style>
-  
-  #p2 {
-      padding-bottom: 50px; 
+    
+  iframe {
+      width: 100%;
+      height: 100%;
   }
-  
+    
+  .embed-responsive,.embed-responsive iframe, 
+  .embed-responsive4by3, .embed-responsive-item { 
+      max-width: 100%; 
+      max-height:600px; 
+  }
   </style>
-  
-
 </head>
 <body>
 
@@ -38,8 +41,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="about.html">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="maps.html">Web Maps</a></li>
         <li><a href="https://www.dropbox.com/s/07k0cxe9sv0un4x/RL_Resume.pdf?dl=1">Resume</a></li>
+        <li><a href="map.html">Web Maps</a></li>
       </ul>
     </div>
   </div>
@@ -47,29 +50,21 @@
 
 <!-- First Container -->
 
-<div class="row">
-
-    <div class="col-sm-2">
-    </div>
-    
-    <div class="col-sm-4">
-      <p>Google Maps Javascript API</p>
-      <a href="gMap.html">
-        <img src="https://dl.dropboxusercontent.com/s/albvpz27kx062g5/gMap.JPG" class="img-responsive" style="width:100%" alt="Google Map">
-      </a>
-    </div>
-    
-    <div class="col-sm-4">
-      <p>ESRI Story Map</p>
-      <a href="stMap.html">
-        <img src="https://dl.dropboxusercontent.com/s/z8teqsfmcubo45b/shanghai.JPG" class="img-responsive" style="width:100%" alt="Shanghai Story Map">
-      </a>
-    </div>    
-    
-    <div class="col-sm-2">
-    </div>
+<div class="container-fluid bg-3 text-center">
+  <h3 class="margin">Tour of Shanghai</h3>
+      <div class="span12">      
+        <p class="p2"> 
+            Shanghai is a vibrant city filled with a myriad of sites to see. Embedding an ESRI Story Map adds a quick and easy way to virtually tour any location. 
+            This Story Map was created as part of a tutorial for the University of Arkansas's Story Map LibGuide.             
+        </p>   
+     </div> 
  </div>
 
+ <div class="container">
+    <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item"  src="https://www.arcgis.com/apps/MapTour/index.html?appid=273d380ee0eb474d89b94e3ba61f72e3&webmap=ee05b61629cf42c0b169fb5ab77ac520"></iframe>
+    </div>
+</div>
 <!-- Footer -->
 <footer class="container-fluid text-center">
 </footer>
